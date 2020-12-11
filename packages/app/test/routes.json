@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/test",
+      "controller": "test.find",
+      "config": {
+        "middleware": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/test/count",
+      "controller": "test.count",
+      "config": {
+        "middleware": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/test/:id",
+      "controller": "test.findOne",
+      "config": {
+        "middleware": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/test",
+      "controller": "test.create",
+      "config": {
+        "middleware": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/test/:id",
+      "controller": "test.update",
+      "config": {
+        "middleware": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/test/:id",
+      "controller": "test.delete",
+      "config": {
+        "middleware": []
+      }
+    }
+  ]
+}
