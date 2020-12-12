@@ -1,18 +1,19 @@
 {
-  "name": "haste-cli",
-  "version": "1.0.0",
-  "description": "A nodejs Framework for faster API development.",
+  "name": "create-haste-app",
+  "version": "0.0.1",
+  "description": "Create haste app, Auto hasteJs app generator.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "haste": "./bin/index.js",
-    "create-haste-app": "./bin/cha.js"
+      "haste": "./bin/index.js",
+      "create-haste-app": "./bin/cha.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs-extra": "^9.0.1",
     "yargs": "^16.2.0"
   }
 }
