@@ -38,7 +38,7 @@ fse.copy(sourceDir, destinationDir, function (err) {
         shell.exec('npm install', function(code, stdout, stderr) {
             console.log("HasteJs Project created successfully!");
             console.log(chalk.blue(`cd ${dir}`));
-            console.log(chalk.blue('yarn run develop'));
+            console.log(chalk.blue('npm run develop'));
         });
     }
 });
