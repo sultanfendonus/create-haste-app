@@ -1,4 +1,4 @@
-import {Model as Post} from './model.js'
+import {Model as UPPER} from './model.js'
 
 const controller = {
     async find(req, res, next){
@@ -12,12 +12,12 @@ const controller = {
             if (!limit || limit < 0) {
                 limit = 10;
             }
-            const response = await Post.findAll({
+            const response = await UPPER.findAll({
                 limit: limit,
                 offset: page * limit
             });
 
-            const total = await Post.count();
+            const total = await UPPER.count();
             let totalPages = total / limit;
             totalPages = Math.ceil(totalPages);
             res.status(200).json({ totalItems: total, totalPages: totalPages, contents: response });
@@ -27,7 +27,7 @@ const controller = {
     },
     async count(req, res, next){
         try {
-            const response = await Post.count({});
+            const response = await UPPER.count({});
             res.json({total: response});
         } catch (err) {
             next(err);
@@ -35,7 +35,7 @@ const controller = {
     },
     async findOne(req, res, next){
         try {
-            const response = await Post.findOne({
+            const response = await UPPER.findOne({
                 where: {
                     id: req.params.id
                 }
@@ -51,7 +51,7 @@ const controller = {
     },
     async create(req, res, next){
         try {
-            const response = await Post.create(req.body);
+            const response = await UPPER.create(req.body);
             res.status(201).json(response);
         } catch (err) {
             next(err);
@@ -59,7 +59,7 @@ const controller = {
     },
     async update(req, res, next){
         try {
-            const response = await Post.update(req.body, {
+            const response = await UPPER.update(req.body, {
                 where: req.params
             });
             if(response[0] === 1){
@@ -74,7 +74,7 @@ const controller = {
     },
     async delete(req, res, next){
         try {
-            const response = await Post.destroy({
+            const response = await UPPER.destroy({
                 where: req.params
             })
             if(response === 1){

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/test",
-      "controller": "test.find",
+      "path": "/REPLACE_ME",
+      "controller": "REPLACE_ME.find",
       "config": {
         "middleware": []
       }
     },
     {
       "method": "GET",
-      "path": "/test/count",
-      "controller": "test.count",
+      "path": "/REPLACE_ME/count",
+      "controller": "REPLACE_ME.count",
       "config": {
         "middleware": []
       }
     },
     {
       "method": "GET",
-      "path": "/test/:id",
-      "controller": "test.findOne",
+      "path": "/REPLACE_ME/:id",
+      "controller": "REPLACE_ME.findOne",
       "config": {
         "middleware": []
       }
     },
     {
       "method": "POST",
-      "path": "/test",
-      "controller": "test.create",
+      "path": "/REPLACE_ME",
+      "controller": "REPLACE_ME.create",
       "config": {
         "middleware": []
       }
     },
     {
       "method": "PUT",
-      "path": "/test/:id",
-      "controller": "test.update",
+      "path": "/REPLACE_ME/:id",
+      "controller": "REPLACE_ME.update",
       "config": {
         "middleware": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/test/:id",
-      "controller": "test.delete",
+      "path": "/REPLACE_ME/:id",
+      "controller": "REPLACE_ME.delete",
       "config": {
         "middleware": []
       }
