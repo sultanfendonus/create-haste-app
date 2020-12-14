@@ -1,19 +1,21 @@
 {
   "name": "create-haste-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create haste app, Auto hasteJs app generator.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-      "haste": "./bin/index.js",
-      "create-haste-app": "./bin/cha.js"
+    "haste": "./bin/index.js",
+    "create-haste-app": "./bin/cha.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.0",
     "fs-extra": "^9.0.1",
+    "shelljs": "^0.8.4",
     "yargs": "^16.2.0"
   }
 }
