@@ -1,28 +1,7 @@
-# **[HasteJS - A nodejs framework.](http://hastejs.com/)**
-[![NPM](https://img.shields.io/npm/v/hastejs-cli.svg?style=flat-square)](https://www.npmjs.com/package/hastejs-cli)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/sultanfendonus/HasteJS/blob/main/LICENSE)
-
-HasteJS is a NodeJs framework, built on top of ExpressJS, released as free and open-source software under the MIT Licence. It is particularly designed to develop a quick Restful API in record time.
-
-`Note: HasteJS still not production-ready.`
-
-**Details Docs:** http://hastejs.com
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/96254405-9395-4994-9a7f-613ccfdfa563/deploy-status)](https://app.netlify.com/sites/hastejs/deploys)
-
-**Node.js**\
-HasteJs only requires Node.js. The current recommended version to run Haste is Node v14.
-
-**Installation and run in development mode**\
-`npx create-haste-app my-app`\
-`cd my-app`\
-`npm run develop`
-
-
 # Module
 
 ### What is Module in HasteJs?
-In **HasteJs**, Modules are some smaller part of your entire project.
+In **HasteJs**, Modules are some smaller part of your entire project. 
 You may want to divide your entire project into some modules so that
 you can easily use these modules for your other hasteJs project easily.
 
@@ -132,7 +111,7 @@ HasteJs uses `sequelize` for managing database operations. For
 updating your model you need to update your `model.js` file to structure your table.
 For more about sequelize model visit here: https://sequelize.org/master/manual/model-basics.html
 
-Example model:
+Example model: 
 ```javascript
 import {sequelize} from "../../database/index.js";
 import DataTypes from 'sequelize';
@@ -166,67 +145,3 @@ This default user module provides the following API
     - Find Specific user.
 
 
-# Middleware
-
-### What is middleware?
-Middleware is a piece of code or functions that have access to the
-request object (req), the response object (res), and the next middleware
-function in the application’s request-response cycle. The next middleware
-function is commonly denoted by a variable named next.
-More about middleware visit [ExpressJS Middleware](https://expressjs.com/en/guide/using-middleware.html)
-
-In a general sense, you will need a middleware when
-you want to verify the request and do some stuff with the request
-before the controller function execute.
-You can define one or multiple middlewares in every route.
-
-`create-haste-app` automatically generates "isLoggedIn"
-middleware for you in `app -> middleware` folder.
-This middleware verifies the JW token and passes the request
-to the controller or error handlers. You can use this middleware
-on any of your routes to secure the route.
-
-Here user count route is secured by `isLoggedIn` middleware. You can add multiple
-middleware in middleware array.
-
-```json
-{
-      "method": "GET",
-      "path": "/user/count",
-      "controller": "user.count",
-      "config": {
-        "middleware": ["isLoggedIn"]
-      }
-    }
-```
-
-You can generate a new middleware for your need. Here is the shortcut way-
-
-**Create a new middleware** \
-`npx create-middleware middlewareName`
-
-_It will generate a new middleware file for you._
-
-```text
-.
-└── middleware
-    ├── isLoggedIn.js
-    └── middlewareName.js
-```
-```javascript
-const middlewareName = (req,res,next) => {
-    try{
-        next();
-    }catch (e) {
-        next(error);
-    }
-}
-
-export default middlewareName;
-```
-
-\
-\
-**License & copyright**\
-© MD SULTAN MAHAMUD, Software Engineer\
-Licensed under the [MIT License](LICENSE).

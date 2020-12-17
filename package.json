@@ -1,6 +1,6 @@
 {
   "name": "create-haste-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create haste app, Auto hasteJs app generator.",
   "main": "index.js",
   "scripts": {
