@@ -1,7 +1,7 @@
 {
   "name": "create-haste-app",
-  "version": "0.0.4",
-  "description": "Create haste app, Auto hasteJs app generator.",
+  "version": "0.0.5",
+  "description": "Create haste app, hasteJs app generator.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
