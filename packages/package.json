@@ -1,6 +1,6 @@
 {
   "name": "packageName",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "app/index.js",
   "type": "module",
   "scripts": {
@@ -30,7 +30,7 @@
     "faker": "^5.1.0",
     "figlet": "^1.5.0",
     "fs-extra": "^9.0.1",
-    "hastejs-cli": "0.0.8",
+    "hastejs-cli": "0.0.9",
     "jsonwebtoken": "^8.5.1",
     "mariadb": "^2.5.2",
     "mocha": "^8.2.1",
