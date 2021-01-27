@@ -1,6 +1,6 @@
 {
   "name": "packageName",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "main": "app/index.js",
   "type": "module",
   "scripts": {
@@ -30,7 +30,7 @@
     "faker": "^5.1.0",
     "figlet": "^1.5.0",
     "fs-extra": "^9.0.1",
-    "hastejs-cli": "0.0.9",
+    "hastejs-cli": "0.1.0",
     "jsonwebtoken": "^8.5.1",
     "mariadb": "^2.5.2",
     "mocha": "^8.2.1",
@@ -46,5 +46,15 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "sequelize-cli": "^6.2.0"
-  }
+  },
+  "keywords": [
+    "hasteJs",
+    "framework",
+    "web",
+    "rest",
+    "api",
+    "restful",
+    "express",
+    "hastejs-cli"
+  ]
 }
